@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "300113930932",
+    "firebase_url": "https://hw09a-358db.firebaseio.com",
+    "project_id": "hw09a-358db",
+    "storage_bucket": "hw09a-358db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300113930932:android:4fd1a0854170cc23",
+        "android_client_info": {
+          "package_name": "com.etuloser.padma.rohit.homework09a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300113930932-0pi71kfaoimsgf8d3poo80dginc55vfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrdwxuTvo96Ryg7d0nRrJC95T9j-lyeCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
