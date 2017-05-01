@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.etuloser.padma.rohit.homework09a.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.etuloser.padma.rohit.homework09a.FrdActivity"
+    tools:showIn="@layout/activity_frd2">
 
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/triplist"
-        android:layout_margin="20dp"
+        android:id="@+id/flistview"
+        android:layout_margin="10dp"
         />
 </LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.etuloser.padma.rohit.homework09a.ChatActivity"
+    tools:showIn="@layout/activity_chat">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUser"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_weight="1.5" />
+
+            <ImageView
+                android:layout_weight=".5"
+                android:layout_gravity="right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageViewLogout"
+                android:src="@drawable/logout"
+                android:visibility="gone"
+
+                />
+</LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_alignEnd="@+id/linearLayout2"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+\        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/chatbox"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+
+    android:id="@+id/linearLayout2">
+
+            <EditText
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/editTextchat"
+                android:background="@android:color/transparent"
+                android:hint="Write a message.."
+                android:layout_weight="1.5" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:id="@+id/imageViewsend"
+                android:src="@drawable/sendd" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageViewGal"
+                android:layout_margin="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gall" />
+        </LinearLayout>
+
+
+</RelativeLayout>

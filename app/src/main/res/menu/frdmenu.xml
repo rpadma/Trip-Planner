@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_myfrds"
+        android:orderInCategory="100"
+        android:title="My Friends"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_myfreq"
+        android:orderInCategory="100"
+        android:title="Friend Request"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_myfpend"
+        android:orderInCategory="100"
+        android:title="Pending request"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_findfrd"
+        android:orderInCategory="100"
+        android:title="Find Friends"
+        app:showAsAction="never" />
+
+
+</menu>

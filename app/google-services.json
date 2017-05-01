@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "300113930932-9nv2cv1jv5bqljr2o81293tlt8vd1gfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.etuloser.padma.rohit.homework09a",
+            "certificate_hash": "0134facf4f22dc933af19b1e737775bf8a8f557a"
+          }
+        },
+        {
           "client_id": "300113930932-0pi71kfaoimsgf8d3poo80dginc55vfh.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -22,6 +30,9 @@
       "api_key": [
         {
           "current_key": "AIzaSyCrdwxuTvo96Ryg7d0nRrJC95T9j-lyeCs"
+        },
+        {
+          "current_key": "AIzaSyB8Fco47oPivDvwMLRy8NjlGTCdiKpHZUk"
         }
       ],
       "services": {
@@ -29,8 +40,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300113930932-0pi71kfaoimsgf8d3poo80dginc55vfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

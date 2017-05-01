@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.etuloser.padma.rohit.homework09a.Profile"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/activity_profile"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="150dp"
+    android:layout_height="150dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:border_width="1dp"
+            app:border_color="#FF000000"
+            android:src="@drawable/avatar_11_raster"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/pimageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/editimage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginBottom="14dp"
+        android:onClick="changeprofileImage"
+        />
+
+</RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/llpro"
+            android:visibility="invisible"
+            >
+            <com.daimajia.numberprogressbar.NumberProgressBar
+                android:id="@+id/profiledp_progress_bar"
+                custom:progress_text_size="10sp"
+                style="@style/NumberProgressBar_Default"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Name"
+
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/profile_ipl_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/profile_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profile_ipl_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/profile_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnergender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
