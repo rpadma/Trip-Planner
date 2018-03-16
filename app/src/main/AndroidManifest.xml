@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.etuloser.padma.rohit.homework09a">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +17,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup,icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB-bpw0ollWA5AKpT11Y2CL2qPFs4kC_dk" />
+
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
@@ -45,7 +56,13 @@
         <activity
             android:name=".FriendProfile"
             android:label="@string/title_activity_friend_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PlaceActivity" />
+        <activity
+            android:name=".ShowTripActivity"
+            android:label="@string/title_activity_show_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MapRoundTripActivity"></activity>
     </application>
 
 </manifest>

@@ -29,6 +29,7 @@
     <string name="title_activity_frd">FrdActivity</string>
     <string name="title_activity_chat">ChatActivity</string>
     <string name="title_activity_friend_profile">FriendProfile</string>
+    <string name="title_activity_show_trip">ShowTripActivity</string>
 
 
 </resources>
