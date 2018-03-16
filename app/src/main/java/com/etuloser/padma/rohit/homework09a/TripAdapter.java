@@ -71,13 +71,24 @@ if(g.getMembers().contains(cuid))
 
         notifyDataSetChanged();
 
+        convertView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+
+
+                ((MainActivity)mcontext).openchat(g.getTkey(),g.getTripname());
+                return false;
+            }
+        });
+
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                ((MainActivity)mcontext).openchat(g.getTkey(),g.getTripname());
+                ((MainActivity)mcontext).showTripDetails(g);
             }
         });
+
 
         return convertView;
 

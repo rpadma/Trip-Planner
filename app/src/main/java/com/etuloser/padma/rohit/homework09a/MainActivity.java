@@ -255,6 +255,8 @@ trip tripobj;
                 for(DataSnapshot d : dataSnapshot.getChildren()) {
 
                     trip toadd = new trip();
+
+
                     toadd = d.getValue(trip.class);
 
                     if((toadd.getTowner().equals(u.getUid())) || (toadd.getMembers().contains(u.getUid())))
@@ -493,5 +495,15 @@ drawer.closeDrawer(GravityCompat.START);
         super.onResume();
 
         Log.d("Onresume","Onresume");
+    }
+
+
+    public void showTripDetails(trip g)
+    {
+
+        Intent i =new Intent(this,ShowTripActivity.class);
+        i.putExtra("tripobj",g);
+        startActivity(i);
+
     }
 }

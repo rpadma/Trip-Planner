@@ -16,6 +16,16 @@ public class trip implements Serializable{
 
     private ArrayList<message> chatobjs;
 
+    private ArrayList<Place> places;
+
+    public ArrayList<Place> getPlaces() {
+        return places;
+    }
+
+    public void setPlaces(ArrayList<Place> places) {
+        this.places = places;
+    }
+
     public ArrayList<message> getChatobjs() {
         return chatobjs;
     }
